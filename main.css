@@ -53,7 +53,7 @@ li.indicator-custom-class {
   background: url(assets/images/maps.png);
   background-repeat: no-repeat;
   background-position: center center;
-  padding-top: 40px;
+  padding-top: 0px;
   padding-left: 10vh;
   margin-top: 70px;
   margin-bottom: 65px;
@@ -67,10 +67,31 @@ li.indicator-custom-class {
   margin-bottom: 65px;
 }
 
+.display-7 {
+  font-weight: 300;
+  position: relative;
+  top: -20px;
+}
+
+.mbr-section-title{
+  font-size: 25pt !important;
+  font-family: 'Jost' !important;
+}
+
 .info-card {
-  background: #f9fdff;
+  background-image: linear-gradient(#f9faff, #dfe5ff);
   border-radius: 0px;
   padding: 40px;
+  padding-top: 80px;
+}
+
+.footer-bottom {
+  color: #838383;
+  padding-left: 10px;
+}
+
+.footer-bottom p {
+  font-size: 10pt !important;
 }
 
 .separator {
@@ -194,3 +215,4 @@ img.topcapimg {
     height: 400px;
   }
 }
+
