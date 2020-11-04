@@ -197,14 +197,14 @@ li.indicator-custom-class {
 }
 
 img.topcapimg {
-  width: 100% !important;
   height: 85vh;
   display: block;
-  outline: 1000px solid rgba(0, 0, 0, 0.2) !important;
-  outline-offset: -1000px;
   overflow: hidden;
   position: relative;
+  width: 100%;
+  object-fit: cover !important;
 }
+
 
 .social-section {
   text-align: center;
