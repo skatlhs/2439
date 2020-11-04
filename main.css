@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap);
 .topSection {
-  margin-top: 0x;
+  margin-top: -30px;
 }
 
 li.indicator-custom-class {
@@ -15,21 +15,38 @@ li.indicator-custom-class {
 .carousel-indicators {
   text-align: right;
   float: right;
-  right: 2% !important;
+  right: -10% !important;
   left: inherit;
+  width: 100px !important;
+  top: 75vh !important;
+}
+
+.indicator-left {
+  text-align: left !important;
+  float: left;
+  left: -12% !important;
+  right: inherit;
+  width: auto;
+  !important;
+  color: rgba(255, 255, 255, 0.44);
+  width: 300px !important;
+  display: block;
+  top: 77vh !important;
 }
 
 .carousel-caption {
   left: 30px;
-  bottom: 15vh;
-  width: 80vh;
-  font-size: 30pt;
+  bottom: 25vh;
+  width: 90vh;
+  font-size: 40pt;
   text-align: start;
+      font-family: 'Crete Round', serif;
+  letter-spacing: 2px;
   /*
   background: rgba(0, 0, 0, 0.28);
   padding: 4px;
 */
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.46);
+/*  text-shadow: 2px 2px rgba(0, 0, 0, 0.46);*/
 }
 
 .outline-button {
@@ -50,7 +67,7 @@ li.indicator-custom-class {
 
 .custom-footer {
   height: 70vh;
-  background: url(assets/images/maps.png);
+  background-image: url(assets/images/maps.png);
   background-repeat: no-repeat;
   background-position: center center;
   padding-top: 0px;
@@ -73,9 +90,10 @@ li.indicator-custom-class {
   top: -20px;
 }
 
-.mbr-section-title{
+.mbr-section-title {
   font-size: 25pt !important;
-  font-family: 'Jost' !important;
+    font-family: 'Jost' !important;
+/*  font-family: 'Crete Round', serif;*/
 }
 
 .info-card {
@@ -108,8 +126,10 @@ li.indicator-custom-class {
   width: 100%;
   transition: top 0.3s;
   z-index: 9999;
+  /*
   padding-left: 100px;
   padding-right: 100px;
+*/
   box-shadow: none;
 }
 
@@ -138,8 +158,10 @@ li.indicator-custom-class {
   width: 100%;
   transition: top 0.3s;
   z-index: 99;
+  /*
   padding-left: 100px;
   padding-right: 100px;
+*/
 }
 
 #innernav a {
@@ -162,9 +184,26 @@ li.indicator-custom-class {
   width: 170px;
 }
 
+.carousel-link {
+  color: rgba(255, 255, 255, 0.32);
+  transition: all .3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.carousel-link:hover {
+  color: rgb(255, 255, 255);
+  transition: all .3s ease;
+}
+
 img.topcapimg {
   width: 100% !important;
+  height: 85vh;
   display: block;
+  outline: 1000px solid rgba(0, 0, 0, 0.2) !important;
+  outline-offset: -1000px;
+  overflow: hidden;
+  position: relative;
 }
 
 .social-section {
@@ -188,6 +227,7 @@ img.topcapimg {
     font-size: 20pt;
     padding: 70px 0;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.46);
+    
   }
   #customnav {
     padding-left: 10px;
@@ -215,4 +255,3 @@ img.topcapimg {
     height: 400px;
   }
 }
-
